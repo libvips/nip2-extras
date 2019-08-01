@@ -1,4 +1,4 @@
-# Dependeincies
+# Dependencies
 * [nip2](https://github.com/libvips/nip2)
 * Follow the [provide instructions](https://github.com/jpadfield/nip2-extras/blob/master/README.md) to add this new tool to [nip2](https://github.com/libvips/nip2). 
 
