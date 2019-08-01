@@ -1,0 +1,33 @@
+Export_annotations = class
+ Menuaction (_ "Export relative dimensions") 
+  (_ "Export dimensions and relative positions of a group of points or regions") {
+   action x = 
+    _result {
+     _vislevel = 3; 
+     _group_check = is_Group x;
+     _pt_l = x.value, _group_check
+           = x;
+     _str =  concat ["{\"annotations\": [",foldl dostuff "" _pt_l, "]}"];
+     _result = String "Annotation" _str;    
+
+     dostuff _s1 _s2 = _s1p2 {
+      _s1p2 = concat [_s1, process _s2], _s1 == ""
+            = concat [_s1, ", ", process _s2];}
+            
+     process r = _str {
+      _iw = r.image.width;
+      _ih = r.image.height;
+        
+      _rt = r.top;
+      _rl = r.left;
+      _rw = r.width;
+      _rh = r.height;
+   
+      x = _rl/_iw;
+      y = _rt/_ih;
+      w = _rw/_iw;
+      h = _rh/_ih;
+  
+      _str = concat ["{ \"file\":", print r.image.super.filename, ", \"x\": ",
+       print x, ", \"y\": ", print y, ", \"w\": ", print w, ", \"h\": ", 
+       print h, ", \"title\": \"Default Title\", \"text\": \"Default Text.\" }"];}}}
