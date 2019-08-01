@@ -2,6 +2,12 @@
 * [nip2](https://github.com/libvips/nip2)
 * Follow the [provide instructions](https://github.com/jpadfield/nip2-extras/blob/master/README.md) to add this new tool to [nip2](https://github.com/libvips/nip2). 
 
+# Acknowledgement
+* This function was created by @jpadfield
+* The work was carried out as part of the H2020 EU project [IPERION-CH](http://www.iperionch.eu/)
+<img src="https://github.com/jpadfield/nip2-extras/blob/master/graphics/IPERION-CH_logo_trans.png" height="64" alt="IPERION-CH Logo">
+<img src="https://github.com/jpadfield/nip2-extras/blob/master/graphics/iperion-ch-eu-tag_black.png" height="64" alt="IPERION-CH Grant Info">
+
 # Summary
 This function was written to calculate the non zero average colour of a given image. So it will discard all black or zero value pixels. The function was specifically created to calculate the average colour of slected areas of an image when the background non-selected area is all black or zero.
 * **INPUT:** The function takes in a single image.
