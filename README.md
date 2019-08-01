@@ -26,13 +26,13 @@ To see or add to the current functions click on **[Toolkits]**, in the menu bar 
 * Click the left mouse button in the blank section on the right of the Toolkits window.
 * You can now either copy and paste the text for your new tool into the window, or directly write a new tool by typing in the required code.
 * Once you are ready you can add the new tool to the list simply by selecting any of the other Toolkits in the list. 
-** This will make your tool accessable in your current nip2 window, but it has not saved your work.
-** If there is a problem with your code you will get an error message at this point.
+  * This will make your tool accessable in your current nip2 window, but it has not saved your work.
+  * If there is a problem with your code you will get an error message at this point.
 * To save your new tool, re-select the Toolkit that you added it to and then save it using the following menu options: **[File][Save Toolkit]**.
 
 # Moving new toolkits and tools when upgrading
 All new toolkits and tools are saved locally on your computer in a specific **start** folder related to the current version of nip2. When you upgrade your software to a new version of nip2 these extra files are not automatically copied accross and you will need to do this manually.
 * Please consult the nip2 documentation for the specific location of your **start** folder.
-** Linux: /home/USERNAME/.nip2-X.X.X/start
-** Windows: *TBC*
-** Mac: *TBC*
+  * Linux: /home/USERNAME/.nip2-X.X.X/start
+  * Windows: *TBC*
+  * Mac: *TBC*
