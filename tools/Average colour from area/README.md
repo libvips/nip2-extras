@@ -9,7 +9,7 @@
 <img src="https://github.com/jpadfield/nip2-extras/blob/master/graphics/iperion-ch-eu-tag_black.png" height="64" alt="IPERION-CH Grant Info">
 
 # Summary
-This function was written to calculate the non zero average colour of a given image. So it will discard all black or zero value pixels. The function was specifically created to calculate the average colour of slected areas of an image when the background non-selected area is all black or zero.
+This function was written to calculate the non zero average colour of user defined non-regular polygons on a given image, specifically defining the average colour colour of individual layer of painting in microscoping painting samples.
 * **INPUT:** The function takes in a group of marks (or points).
 * **OUTPUT:** The function will output a simple colour widget, with a option to select the required colourspace, RGB, Lab, etc.
 
