@@ -5,10 +5,10 @@
 
 New [nip2](https://github.com/libvips/nip2) functions are created for lots of different individual reasons but can also often be useful for others so we will try to list them here.
 
-#Documentation 
+# Documentation 
 Please begin with the standard [nip2](https://github.com/libvips/nip2) [documentation](https://github.com/libvips/nip2#documentation) specific comments and documentation will be provided with each new function script.
 
-#Dependencies
+# Dependencies
 You will need [nip2](https://github.com/libvips/nip2) installed to make use of these scripts.
 
-#Adding new nip2 functions
+# Adding new nip2 functions
