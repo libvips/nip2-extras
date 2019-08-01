@@ -16,7 +16,7 @@ This function was written to help export details of points and areas of interest
 # Instructions
 * Open Nip2 software
 * Ensure that you have added this new tool, given below onto a new or existing Toolkit.
-* For this example the new tool "Average colour from area" was added to a new Toolkit called "TEST".
+* For this example the new tool "Export relative dimensions" was added to a new Toolkit called "TEST".
 ## In the main (workspace) window:
 * Create or open an image.
   * Go to **File > Open** and select the image file.
