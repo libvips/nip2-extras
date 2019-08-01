@@ -8,7 +8,6 @@
 <img src="https://github.com/jpadfield/nip2-extras/blob/master/graphics/IPERION-CH_logo_trans.png" height="64" alt="IPERION-CH Logo">
 <img src="https://github.com/jpadfield/nip2-extras/blob/master/graphics/iperion-ch-eu-tag_black.png" height="64" alt="IPERION-CH Grant Info">
 
-
 # Summary
 This function was written to calculate the non zero average colour of a given image. So it will discard all black or zero value pixels. The function was specifically created to calculate the average colour of slected areas of an image when the background non-selected area is all black or zero.
 * **INPUT:** The function takes in a group of marks (or points).
