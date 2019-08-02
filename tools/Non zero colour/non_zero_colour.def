@@ -14,4 +14,4 @@ Non_zero_colour_item = class
 			which = Option_enum (_ "Display") _spaces (_spaces.get_name 13);
 			_rgb = Colour_to_colour_item.action [_R, _G, _B];
 					
-			_result = Colour_convert_item.conv which.value_thing _rgb;}}
+			_result = Colour_convert_item.conv which.value_thing _rgb;}};

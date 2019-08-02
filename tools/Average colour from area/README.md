@@ -16,7 +16,7 @@ This function was written to calculate the non zero average colour of user defin
 # Instructions
 * Open Nip2 software
 * Ensure that you have added this new tool, given below onto a new or existing Toolkit.
-* For this example the new tool "Average colour from area" was added to a new Toolkit called "TEST".
+* For this example the new tool "Average colour from area" was added to a new Toolkit called "Extras".
 ## In the main (workspace) window:
 * Create or open an image.
   * Go to **File > Open** and select the image file.
@@ -36,7 +36,7 @@ This function was written to calculate the non zero average colour of user defin
   * You can also select/deselect specific points, if required, by clicking on then while holding down the **ctrl** key.
 * In the main menu options select **Edit > Group**.
 * This will create a new group item in your selected column, which will contain a reference to all of the points you had selected.
-* Select the group item, by clicking on it, and then in the main menu select **Toolkits > TEST > Average Colour from area**.
+* Select the group item, by clicking on it, and then in the main menu select **Toolkits > Extras > Average Colour from area**.
 * Your average colour will then be added to your selected coloumn.
 ## Additional Notes 
 The software continually recalculates the outcomes according to the changes you make, e.g. after following these steps, it is possible to go back and move the points on the **A1** image, and see an (almost) instant adjustment of the resulting colour.

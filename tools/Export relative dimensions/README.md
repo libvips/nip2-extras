@@ -16,7 +16,7 @@ This function was written to help export details of points and areas of interest
 # Instructions
 * Open Nip2 software
 * Ensure that you have added this new tool, given below onto a new or existing Toolkit.
-* For this example the new tool "Export relative dimensions" was added to a new Toolkit called "TEST".
+* For this example the new tool "Export relative dimensions" was added to a new Toolkit called "Extras".
 ## In the main (workspace) window:
 * Create or open an image.
   * Go to **File > Open** and select the image file.
@@ -44,7 +44,7 @@ In the main (workspace) window:
   * You can also select/deselect specific points, if required, by clicking on then while holding down the **ctrl** key.
 * In the main menu options select **Edit > Group**.
 * This will create a new group item in your selected column, which will contain a reference to all of the points you had selected.
-* Select the group item, by clicking on it, and then in the main menu select **Toolkits > TEST > Export relative dimensions**.
+* Select the group item, by clicking on it, and then in the main menu select **Toolkits > Extras > Export relative dimensions**.
 * This will create a new entry in your column and the details of all of the selcted annotations can be exported bu simply copying the long line of text created in the text box.
 * The data is formatted in a simple JSON format which can then be re-used in other programs.
 ## Additional Notes

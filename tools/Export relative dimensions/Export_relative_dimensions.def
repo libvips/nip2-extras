@@ -30,4 +30,4 @@ Export_annotations = class
   
       _str = concat ["{ \"file\":", print r.image.super.filename, ", \"x\": ",
        print x, ", \"y\": ", print y, ", \"w\": ", print w, ", \"h\": ", 
-       print h, ", \"title\": \"Default Title\", \"text\": \"Default Text.\" }"];}}}
+       print h, ", \"title\": \"Default Title\", \"text\": \"Default Text.\" }"];}}};

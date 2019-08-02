@@ -78,4 +78,4 @@ Draw_scalebar_item = class
 				}
 			}
 		}
-	}
+	};

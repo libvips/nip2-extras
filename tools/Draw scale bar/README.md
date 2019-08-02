@@ -17,7 +17,7 @@ This function was written to simplify the process of adding consistent scale bar
 # Instructions
 * Open Nip2 software
 * Ensure that you have added this new tool, given below onto a new or existing Toolkit.
-* For this example the new tool "Draw Scale Bar" was added to a new Toolkit called "TEST".
+* For this example the new tool "Draw Scale Bar" was added to a new Toolkit called "Extras".
 ## In the main (workspace) window:
 * Create or open an image.
   * Go to **File > Open** and select the image or group of images required.
@@ -28,7 +28,7 @@ This function was written to simplify the process of adding consistent scale bar
 Group [10000,15000,20000]
 ```
 * Select your image/group of images, by clicking on it, and then also select your resolution number of group of resolution numbers by clicking on it while holding down the **ctrl** key.
-* In the main menu select **Toolkits > TEST > Draw Scale Bar**.
+* In the main menu select **Toolkits > Extras > Draw Scale Bar**.
 * A new scale bar widget will be added to you selected column.
 * Adjust the various options as required to adjust the format of the scale bar.
   * For single images the results will be shown in the thumbnail of the widget.

@@ -16,11 +16,11 @@ This function was written to calculate the non zero average colour of a given im
 # Instructions
 * Open Nip2 software
 * Ensure that you have added this new tool, given below onto a new or existing Toolkit.
-* For this example the new tool "Image to non zero colour" was added to a new Toolkit called "TEST".
+* For this example the new tool "Image to non zero colour" was added to a new Toolkit called "Extras".
 * In the main (workspace) window:
   * Create or open an image to be processed.
   * Select the image by left clicking on the alphanumeric tag tot he left of your image, this will be **A1** for the first image loaded into column **A**.
-  * Run the new function **Toolkits > TEST > Image to non zero colour**.
+  * Run the new function **Toolkits > Extras > Image to non zero colour**.
   
 # Required Code
 ```

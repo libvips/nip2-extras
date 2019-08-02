@@ -1,4 +1,4 @@
-Adjust_logo_item = class
+Adjust_logo_colours_item = class
 	Menuaction (_ "Adjust logo colours") 
 		(_ "Alter the colours used in a 2 tone logo, text on a background colour") {
 	action x = class
@@ -44,4 +44,4 @@ Adjust_logo_item = class
 			}
 		}
 		}
-	}
+	};
