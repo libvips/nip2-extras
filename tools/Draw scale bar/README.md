@@ -36,7 +36,7 @@ Group [10000,15000,20000]
   * Please note that groups can be saved in one go.
 
 # Screenshots 
-<table><tr><td>rc="https://github.com/jpadfield/nip2-extras/blob/master/images/dsb_01.png" height="310" alt="Example Screenshot"> <table><tr><td>rc="https://github.com/jpadfield/nip2-extras/blob/master/images/dsb_02.png" height="310" alt="Example Screenshot"></td></tr></table>
+<table><tr><td><img src="https://github.com/jpadfield/nip2-extras/blob/master/images/dsb_01.png" height="310" alt="Example Screenshot"></td><td><img src="https://github.com/jpadfield/nip2-extras/blob/master/images/dsb_02.png" height="310" alt="Example Screenshot"></td></tr></table>
 
 # Tool Code
 * [Draw_Scale_bar.def](Draw_Scale_bar.def)
