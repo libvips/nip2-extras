@@ -51,8 +51,7 @@ In the main (workspace) window:
 * The Json output includes fields for titles and text desctiptions or comments to be added to the details, these can be very useful when the data is reused.
 
 # Screenshots 
-<img src="https://github.com/jpadfield/nip2-extras/blob/master/images/erd_01.png" width="512" alt="Example Screenshot">
-<img src="https://github.com/jpadfield/nip2-extras/blob/master/images/erd_02.png" width="512" alt="Example Screenshot">
+| <img src="https://github.com/jpadfield/nip2-extras/blob/master/images/erd_01.png" height="550" alt="Example Screenshot"> | <img src="https://github.com/jpadfield/nip2-extras/blob/master/images/erd_02.png" height="550" alt="Example Screenshot"> |
 
 # Example output
 ```json

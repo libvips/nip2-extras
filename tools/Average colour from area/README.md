@@ -45,8 +45,7 @@ The software continually recalculates the outcomes according to the changes you 
 This way of working can save time - once the points are positioned the new averaged colour and Lab values appear without any further steps being necessary, provided that enough points are placed initially to allow the definition of a variety of irregular shapes.
 
 # Screenshots 
-<img src="https://github.com/jpadfield/nip2-extras/blob/master/images/acfa_01.png" width="512" alt="Example Screenshot">
-<img src="https://github.com/jpadfield/nip2-extras/blob/master/images/acfa_02.png" width="512" alt="Example Screenshot">
+| <img src="https://github.com/jpadfield/nip2-extras/blob/master/images/acfa_01.png" height="370" alt="Example Screenshot"> | <img src="https://github.com/jpadfield/nip2-extras/blob/master/images/acfa_02.png" height="370" alt="Example Screenshot"> |
 
 # Tool Code
 * [Average_colour_from_area.def](Average_colour_from_area.def)
