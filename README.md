@@ -9,7 +9,7 @@ New [nip2](https://github.com/libvips/nip2) functions are created for lots of di
 Please begin with the standard [nip2](https://github.com/libvips/nip2) [documentation](https://github.com/libvips/nip2#documentation) specific comments and documentation will be provided with each new function script.
 
 # Dependencies
-You will need [nip2](https://github.com/libvips/nip2) installed to make use of these scripts.
+You will need [nip2](https://github.com/libvips/nip2/releases) installed to make use of these scripts.
 
 # Current Extras Code
 All of the current extra Tools can be downloaded via this single file: [Extras.def](Extras.def)
