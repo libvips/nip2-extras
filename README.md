@@ -19,24 +19,24 @@ The Nip2 software is very flexible and can be enhanced with new tools to aid ima
 
 To see or add to the current functions click on **Toolkits**, in the menu bar at the top of the nip2 window, and then **Edit** from the list of options.
 
-## Add from existing def file
+## Adding Tools from existing def file
 If you have downloaded or created a new **def** file they can be loaded straight into nip2.
 * Open up the Toolkits window from the main window menus: **Toolkits > Edit**
 * In the Toolkits window open the new **def** file: **File > Open Toolkits**
 * Browse to find you file and then click **Open**
 * The new functions included in your selected **def** file will then be added to your **Toolkits** list.
 ### Saving your new loaded Toolkit
-In order for nip2 to know to cintinue to load your new **def** file it needs to be saved in a specific **start** folder.
+In order for nip2 to know to continue to load your new **def** file it needs to be saved in a specific **start** folder.
 * In the Toolkits window click on the name of your new **Toolkit** to select it.
 * Then save it using: **File > Save Toolkits as**
 * Navigate to your default nip2 **start** folder (see below) and then click **Save**
 #### nip2 **start** folders
-A new nip2 **start** folder is created everytime you install an new version of nip2 and will automatically be given the name **.nip2-X.X.X** with X.X.X replaced with the soecific version number of the software you have installed. The location of the **start** folder is different depending on which OS you are using, please consult the [nip2 documentation](https://github.com/libvips/nip2#documentation) for details. The default locations for each of the main OSs is given below:
+A new nip2 **start** folder is created every time you install an new version of nip2 and will automatically be given the name **.nip2-X.X.X** with X.X.X replaced with the specific version number of the software you have installed. The location of the **start** folder is different depending on which OS you are using, please consult the [nip2 documentation](https://github.com/libvips/nip2#documentation) for details. The default locations for each of the main OSs is given below:
   * Linux: /home/USERNAME/.nip2-X.X.X/start
   * Windows 10: C:\Users\USERNAME\AppData\Roaming\nip2-8.7.0\start
   * Mac: *TBC*
  
-Please note an easy way to find the location of your **start** folder is by selecting any of the original **Toolkits**, such as **Colour** and then using **File > Save Toolkits as**. WHen the save window opens the default save location will be your **start** folder. Just take note of the location, click **Cancel** and then try saving your new **Toolkit** again.
+Please note an easy way to find the location of your **start** folder is by selecting any of the original **Toolkits**, such as **Colour** and then using **File > Save Toolkits as**. When the save window opens the default save location will be your **start** folder. Just take note of the location, click **Cancel** and then try saving your new **Toolkit** again.
 
 ## Adding now Toolkits/Tools manually
 
@@ -54,10 +54,10 @@ If you want to create your own nip2 menus (**Toolkits**) or add in individual **
 * Click the left mouse button in the blank section on the right of the Toolkits window.
 * You can now either copy and paste the text for your new tool into the window, or directly write a new tool by typing in the required code.
 * Once you are ready you can add the new tool to the list simply by selecting any of the other Toolkits in the list. 
-  * This will make your tool accessable in your current nip2 window, but it has not saved your work.
+  * This will make your tool accessible in your current nip2 window, but it has not saved your work.
   * If there is a problem with your code you will get an error message at this point.
 * To save your new tool, re-select the Toolkit that you added it to and then save it using the following menu options: **File > Save Toolkit**.
 
 # Moving new toolkits and tools when upgrading
-All new toolkits and tools are saved locally on your computer in a specific **start** folder related to the current version of nip2. When you upgrade your software to a new version of nip2 these extra files are not automatically copied accross and you will need to do this manually. Please see the notes above relating to finding your current **start** folder.
+All new toolkits and tools are saved locally on your computer in a specific **start** folder related to the current version of nip2. When you upgrade your software to a new version of nip2 these extra files are not automatically copied across and you will need to do this manually. Please see the notes above relating to finding your current **start** folder.
 
