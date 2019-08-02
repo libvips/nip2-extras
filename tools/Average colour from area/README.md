@@ -3,7 +3,7 @@
 * Follow the [provided instructions](https://github.com/jpadfield/nip2-extras/blob/master/README.md) to add this new tool to [nip2](https://github.com/libvips/nip2). 
 
 # Acknowledgement
-* This function was created by @jpadfield
+* This function was created by [jpadfield](https://github.com/jpadfield)
 * The work was carried out as part of the H2020 EU project [IPERION-CH](http://www.iperionch.eu/)
 <img src="https://github.com/jpadfield/nip2-extras/blob/master/images/IPERION-CH_logo_trans.png" height="64" alt="IPERION-CH Logo">
 <img src="https://github.com/jpadfield/nip2-extras/blob/master/images/iperion-ch-eu-tag_black.png" height="64" alt="IPERION-CH Grant Info">
@@ -44,26 +44,9 @@ The software continually recalculates the outcomes according to the changes you 
 * The set of points can then be re-positioned on the new image to define a different shape as required.
 This way of working can save time - once the points are positioned the new averaged colour and Lab values appear without any further steps being necessary, provided that enough points are placed initially to allow the definition of a variety of irregular shapes.
 
-# Required Code
-```
-Average_colour_from_group_of_marks_item = class
-	Menuaction (_ "Average colour from area") 
-		(_ "Calculate the non zero average colour of area defined by a Group of marks") {
-			action x = class
-				_result {
-					_vislevel = 3; 
-					
-					_mask = select_polygon x;
-					_oim = get_image ((x.value)?0);
-					_im = if _mask then _oim else 0;
-					_x = Colour_convert_item.sRGB_item.action _im;
-					_R = meanze _x?0;
-					_G = meanze _x?1;
-					_B = meanze _x?2; 
-					
-					_spaces = Image_type.image_colour_spaces;
-					which = Option_enum (_ "Display") _spaces (_spaces.get_name 13);
-					_rgb = Colour_to_colour_item.action [_R, _G, _B];
-					
-					_result = Colour_convert_item.conv which.value_thing _rgb;}}
-```
+# Screenshots 
+<img src="https://github.com/jpadfield/nip2-extras/blob/master/images/acfa_01.png" width="512" alt="Example Screenshot">
+<img src="https://github.com/jpadfield/nip2-extras/blob/master/images/acfa_02.png" width="512" alt="Example Screenshot">
+
+# Tool Code
+* [Average_colour_from_area.def](Average_colour_from_area.def)

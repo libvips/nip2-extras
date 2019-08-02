@@ -36,7 +36,7 @@ A new nip2 **start** folder is created every time you install an new version of 
   * Windows 10: C:\Users\USERNAME\AppData\Roaming\nip2-8.7.0\start
   * Mac: *TBC*
  
-Please note an easy way to find the location of your **start** folder is by selecting any of the original **Toolkits**, such as **Colour** and then using **File > Save Toolkits as**. When the save window opens the default save location will be your **start** folder. Just take note of the location, click **Cancel** and then try saving your new **Toolkit** again.
+Please note an easy way to find the location of your **start** folder is by selecting any of the original Toolkits, such as **Colour** and then using **File > Save Toolkits as**. When the save window opens the default save location will be your **start** folder. Just take note of the location, click **Cancel** and then try saving your new **Toolkit** again.
 
 ## Adding now Toolkits/Tools manually
 

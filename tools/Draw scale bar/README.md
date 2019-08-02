@@ -3,7 +3,7 @@
 * Follow the [provided instructions](https://github.com/jpadfield/nip2-extras/blob/master/README.md) to add this new tool to [nip2](https://github.com/libvips/nip2). 
 
 # Acknowledgement
-* This function was created by @jpadfield
+* This function was created by [jpadfield](https://github.com/jpadfield)
 * The work was carried out as part of the H2020 EU project [IPERION-CH](http://www.iperionch.eu/)
 <img src="https://github.com/jpadfield/nip2-extras/blob/master/images/IPERION-CH_logo_trans.png" height="64" alt="IPERION-CH Logo">
 <img src="https://github.com/jpadfield/nip2-extras/blob/master/images/iperion-ch-eu-tag_black.png" height="64" alt="IPERION-CH Grant Info">
@@ -35,89 +35,9 @@ Group [10000,15000,20000]
   * For groups of images you will need use the **Edit > Ungroup** option to unpack the group and see all of the results.
   * Please note that groups can be saved in one go.
 
+# Screenshots 
+<img src="https://github.com/jpadfield/nip2-extras/blob/master/images/dsb_01.png" width="512" alt="Example Screenshot">
+<img src="https://github.com/jpadfield/nip2-extras/blob/master/images/dsb_02.png" width="512" alt="Example Screenshot">
 
-
-# Required Code
-```
-Draw_scalebar_item = class 
-	Menuaction (_"Draw Scale Bar")
-		( "Add a consistant scale bar to an image (x), or a group of images, based on a defined resolution (y) (ppmm)") {
-		action x y = class
-		_result {
-			_vislevel = 3;
-
-			ow = Option "Output Width" ["One Column", "Two Column", "Custom (cm)"] 1;
-			cow = Expression "Optional Custom Output Width (cm)" 8;			
-			text = Option "Display Text" [
-				"20 µm", "50 µm", "100 µm", "200 µm", "500 µm", 
-				"1 mm", "2 mm", "5 mm", "1 cm", "2 cm", "5 cm", 
-				"10 cm", "20 cm", "50 cm", "1 m"] 1;			
-			pos = Option "Position Text" ["Left", "Right"] 0;
-			col = Option "Text Colour" ["White", "Black", "Red"] 0;
-
-			Options = class
-				{
-				_vislevel = 1;
-				dpi = Expression "Output Printing DPI" 600;
-				ed = Expression "Distance from printed side edge ( % of printed width )" 4;
-				bd = Expression "Distance from printed bottom edge (  % of printed height )" 3;
-				thick = Scale "Line thickness" 1 50 5;
-				font = Fontname "Use font" Workspaces.Preferences.PAINTBOX_FONT;
-				}
-
-			_ow' = [80, 160, (cow.expr*10)]?ow;
-			_sbw = [0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000]?text;
-			_colv = [[255, 255, 255], [0, 0, 0], [255, 0, 0]];
-			_col' = 	Colour "sRGB" _colv?col;
-			_dpi = Options.dpi.expr;
-			_dpmm = _dpi/(2.54*10);
-			_pw =_ow' * _dpmm;
-			_edmm = (Options.ed.expr * _ow')/100;
-			_interp = Interpolate_picker Interpolate_type.BILINEAR;
-      
-			//Check for a group + int pair
-			_y = y, is_Group y;
-			   = Group (map (const y) [1..(len x.value)]), is_Group x;
-			   = y;
-
-      		_result
-				= map_binary process x _y
-        		{
-				process im ppmm = blend (Image scale) ink' nim        
-						{
-            			// make an ink compatible with the image
-            			ink' = colour_transform_to (get_type im) _col';
-						im_scale = _pw / im.width;
-						ph = im.height * im_scale;
-						oh = (_ow' * im.height)/im.width;
-						
-						nim = resize _interp im_scale im_scale im;
-						nppmm = ppmm * im_scale;
-						
-			          w = _sbw * nppmm;
-						bdmm = (Options.bd.expr * oh)/100;
-			  			xp = [_edmm * _dpmm, _pw - w - (_edmm * _dpmm)]?pos;
-            			yp = ph - (bdmm * _dpmm);
-             			t = (floor Options.thick.value * _ow')/160;
-
-          			bg = image_new (get_width nim) (get_height nim) (get_bands nim)
-                 		(get_format nim) (get_coding nim) (get_type nim) 0 0 0;
-            		   draw_block xp yp w t nim =
-               			draw_rect_width xp yp w t true 1 [255] nim;
-            			label = im_text text.labels?text Options.font.value w 1 (_dpi*(_ow'/160));
-            			lw = get_width label;
-            			lh = get_height label;
-            			ly = yp - lh - t;
-            			vx = [xp - t / 2, xp + w - t / 2];
-
-						scale = (draw_block xp yp w t @
-							draw_block vx?0 (yp - 2 * t) t (t * 5) @
-							draw_block vx?1 (yp - 2 * t) t (t * 5) @
-							insert_noexpand (xp + w / 2 - lw / 2) ly label)
-							bg;
-
-				}
-			}
-		}
-	}
-```
+# Tool Code
+* [Draw_Scale_bar.def](Draw_Scale_bar.def)
