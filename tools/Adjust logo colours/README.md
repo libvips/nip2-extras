@@ -24,6 +24,8 @@ This function was written to quickly adjust the colours used in a 2 tone logo or
   * The forground and background colours can then be changed using the two provided colour widgets.
  
 # Screenshots 
-<img src="https://github.com/jpadfield/nip2-extras/blob/master/images/alc_01.png" height="150" alt="Example Screenshot">
+<img src="https://github.com/jpadfield/nip2-extras/blob/master/images/alc_01.png" width="512" alt="Example Screenshot">
+
 # Required Code
 * [Adjust_logo_colours.def](Adjust_logo_colours.def)
+

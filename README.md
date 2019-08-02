@@ -11,17 +11,45 @@ Please begin with the standard [nip2](https://github.com/libvips/nip2) [document
 # Dependencies
 You will need [nip2](https://github.com/libvips/nip2) installed to make use of these scripts.
 
-# Adding new nip2 functions
-The Nip2 software is very flexible and can be enhanced with new tools to aid image processing activities. All of the existing menu options can be viewed and edited if required and new ones can be added as needed. New individual functions are refered to as **tools** and groups of these tools are refered to as **toolkits**.
+# Current Extras Code
+All of the current extra Tools can be downloaded via this single file: [Extras.def](Extras.def)
 
-To see or add to the current functions click on **Toolkits**, in the menu bar at the top of the nip2 window, and then **[Edit]** from the list of options.
-## New Toolkits
+# Adding new nip2 functions
+The Nip2 software is very flexible and can be enhanced with new tools to aid image processing activities. All of the existing menu options can be viewed and edited if required and new ones can be added as needed. New individual functions are refered to as **Tools** and groups of these tools are refered to as **Toolkits**.
+
+To see or add to the current functions click on **Toolkits**, in the menu bar at the top of the nip2 window, and then **Edit** from the list of options.
+
+## Add from existing def file
+If you have downloaded or created a new **def** file they can be loaded straight into nip2.
+* Open up the Toolkits window from the main window menus: **Toolkits > Edit**
+* In the Toolkits window open the new **def** file: **File > Open Toolkits**
+* Browse to find you file and then click **Open**
+* The new functions included in your selected **def** file will then be added to your **Toolkits** list.
+### Saving your new loaded Toolkit
+In order for nip2 to know to cintinue to load your new **def** file it needs to be saved in a specific **start** folder.
+* In the Toolkits window click on the name of your new **Toolkit** to select it.
+* Then save it using: **File > Save Toolkits as**
+* Navigate to your default nip2 **start** folder (see below) and then click **Save**
+#### nip2 **start** folders
+A new nip2 **start** folder is created everytime you install an new version of nip2 and will automatically be given the name **.nip2-X.X.X** with X.X.X replaced with the soecific version number of the software you have installed. The location of the **start** folder is different depending on which OS you are using, please consult the [nip2 documentation](https://github.com/libvips/nip2#documentation) for details. The default locations for each of the main OSs is given below:
+  * Linux: /home/USERNAME/.nip2-X.X.X/start
+  * Windows 10: C:\Users\USERNAME\AppData\Roaming\nip2-8.7.0\start
+  * Mac: *TBC*
+ 
+Please note an easy way to find the location of your **start** folder is by selecting any of the original **Toolkits**, such as **Colour** and then using **File > Save Toolkits as**. WHen the save window opens the default save location will be your **start** folder. Just take note of the location, click **Cancel** and then try saving your new **Toolkit** again.
+
+## Adding now Toolkits/Tools manually
+
+If you want to create your own nip2 menus (**Toolkits**) or add in individual **Tools** to and existing **Toolkit** see below:
+
+### New Toolkits
 * If this is the first tool you are adding please first create a new toolkit, if you have already done this you can skip down to adding a new tool.
+* Open up the Toolkits window from the main window menus: **Toolkits > Edit**
 * In the Toolkits window create a new toolkit, if required using the following menu options: **File > New > New Toolkit**
-* You will be asked to provide a name for your new toolkit, type a new name in and then click **"Create"**.
+* You will be asked to provide a name for your new toolkit, type a new name in and then click **Create**.
 * You will see that the name you typed in has been added to long list on the left of the Toolkits window.
 ## Adding a New Tool
-* Select the Toolkit you would like to add your new tool to, by simply left clicking on the name of the Toolkit in the list on the left.
+* Select the Toolkit you would like to add your new Tool to, by simply left clicking on the name of the Toolkit in the list on the left.
 * To make sure you are ready to add a new tool select the option using the following menu options: **File > New > New Tool**
 * Click the left mouse button in the blank section on the right of the Toolkits window.
 * You can now either copy and paste the text for your new tool into the window, or directly write a new tool by typing in the required code.
@@ -31,8 +59,5 @@ To see or add to the current functions click on **Toolkits**, in the menu bar at
 * To save your new tool, re-select the Toolkit that you added it to and then save it using the following menu options: **File > Save Toolkit**.
 
 # Moving new toolkits and tools when upgrading
-All new toolkits and tools are saved locally on your computer in a specific **start** folder related to the current version of nip2. When you upgrade your software to a new version of nip2 these extra files are not automatically copied accross and you will need to do this manually.
-* Please consult the nip2 documentation for the specific location of your **start** folder.
-  * Linux: /home/USERNAME/.nip2-X.X.X/start
-  * Windows: *TBC*
-  * Mac: *TBC*
+All new toolkits and tools are saved locally on your computer in a specific **start** folder related to the current version of nip2. When you upgrade your software to a new version of nip2 these extra files are not automatically copied accross and you will need to do this manually. Please see the notes above relating to finding your current **start** folder.
+
