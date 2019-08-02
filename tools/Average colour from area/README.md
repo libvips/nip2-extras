@@ -5,8 +5,8 @@
 # Acknowledgement
 * This function was created by @jpadfield
 * The work was carried out as part of the H2020 EU project [IPERION-CH](http://www.iperionch.eu/)
-<img src="https://github.com/jpadfield/nip2-extras/blob/master/graphics/IPERION-CH_logo_trans.png" height="64" alt="IPERION-CH Logo">
-<img src="https://github.com/jpadfield/nip2-extras/blob/master/graphics/iperion-ch-eu-tag_black.png" height="64" alt="IPERION-CH Grant Info">
+<img src="https://github.com/jpadfield/nip2-extras/blob/master/images/IPERION-CH_logo_trans.png" height="64" alt="IPERION-CH Logo">
+<img src="https://github.com/jpadfield/nip2-extras/blob/master/images/iperion-ch-eu-tag_black.png" height="64" alt="IPERION-CH Grant Info">
 
 # Summary
 This function was written to calculate the non zero average colour of user defined non-regular polygons on a given image, specifically defining the average colour colour of individual layer of painting in microscoping painting samples.

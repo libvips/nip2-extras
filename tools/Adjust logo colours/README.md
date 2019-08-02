@@ -5,7 +5,7 @@
 # Acknowledgement
 * This function was created by @jpadfield
 * The work was carried out as part of the general image processing development at [The National Gallery](https://www.nationalgallery.org.uk/)
-<img src="https://github.com/jpadfield/nip2-extras/blob/master/graphics/NG Logo Black on Transparent 600.png" height="64" alt="IPERION-CH Logo">
+<img src="https://github.com/jpadfield/nip2-extras/blob/master/images/NG Logo Black on Transparent 600.png" height="64" alt="IPERION-CH Logo">
 
 # Summary
 This function was written to quickly adjust the colours used in a 2 tone logo or text on a background colour. It was specifically created to allow multiple matching, simplified logos to be droped into "partner" pages on project websites.
