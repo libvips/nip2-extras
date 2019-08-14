@@ -14,6 +14,8 @@ You will need [nip2](https://github.com/libvips/nip2/releases) installed to make
 # Current Extras Code
 All of the current extra Tools can be downloaded via this single file: [Extras.def](Extras.def)
 
+Each of the individual tools can be found, complete with documentation in the [tools folder](./tools)
+
 # Adding new nip2 functions
 The Nip2 software is very flexible and can be enhanced with new tools to aid image processing activities. All of the existing menu options can be viewed and edited if required and new ones can be added as needed. New individual functions are refered to as **Tools** and groups of these tools are refered to as **Toolkits**.
 
