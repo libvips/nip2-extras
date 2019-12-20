@@ -12,7 +12,7 @@ Please begin with the standard [nip2](https://github.com/libvips/nip2) [document
 You will need [nip2](https://github.com/libvips/nip2/releases) installed to make use of these scripts.
 
 # Current Extras Code
-All of the current extra Tools can be downloaded via this single file: [Extras.def](Extras.def)
+All of the current extra Tools can be viewed at [Extras.def](Extras.def) or directly downloaded [here](https://github.com/libvips/nip2-extras/raw/master/Extras.def).
 
 Each of the individual tools can be found, complete with documentation in the [tools folder](./tools)
 
